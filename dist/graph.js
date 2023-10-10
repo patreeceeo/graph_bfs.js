@@ -1,2 +1,3 @@
-export function searchBreadth(i,o){const t=[],s=new Set,e=new Set;for(t.push(o);t.length>0;){const n=t.pop();if(!s.has(n)){s.add(n),e.add(n);const r=i.get(n);if(r)for(const a of r)t.push(a)}}return e}
+/// <reference types="../types/graph.d.ts" />
+export function searchBreadth(a,o){const t=[],e=new Set,s=new Set;for(t.push(o);t.length>0;){const n=t.pop();if(!e.has(n)){e.add(n),s.add(n);const r=a.get(n);if(r)for(const i of r)t.push(i)}}return s}
 //# sourceMappingURL=graph.js.map
