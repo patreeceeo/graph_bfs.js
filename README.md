@@ -1,4 +1,4 @@
-# Graph Functions (graph_fns.js)
+# Graph Functions
 
 ## What
 

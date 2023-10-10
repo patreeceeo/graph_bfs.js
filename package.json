@@ -1,0 +1,27 @@
+{
+  "name": "graph_fns",
+  "version": "0.1.0",
+  "description": "Simple graph (theory) functions (with types)",
+  "main": "dist/graph.js",
+  "scripts": {
+    "test": "deno test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patreeceeo/graph_fns.js.git"
+  },
+  "keywords": [
+    "graph",
+    "graph-theory",
+    "functions",
+    "functional-programming",
+    "fp"
+  ],
+  "author": "Patrick Canfield",
+  "license": "ISC",
+  "types": "./dist/graph.d.ts",
+  "bugs": {
+    "url": "https://github.com/patreeceeo/graph_fns.js/issues"
+  },
+  "homepage": "https://github.com/patreeceeo/graph_fns.js#readme"
+}
