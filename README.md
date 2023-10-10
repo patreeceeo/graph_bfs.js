@@ -1,5 +1,11 @@
 # Graph Functions
 
+## Usage
+
+`npm install graph_fn`
+
+Also compatible with Deno!
+
 ## What
 
 A simple graph theory library that provides functions that work with plain old JavaScript native types. Inspired by `date-fns`.
