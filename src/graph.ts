@@ -1,7 +1,7 @@
 export type Graph = Map<string, Set<string>>;
 
 /**
-* Given a graph and a starting node, return a set of all nodes that can be reached from the starting node.
+* Given a graph and a starting node, return a set of all nodes that can be reached from the starting node, searching breadth-first. Handles cycles by remembering which nodes have been visited.
 */
 export function searchBreadth(graph: Graph, start: string): Set<string> {
   const stack = [];
