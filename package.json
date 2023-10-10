@@ -1,6 +1,6 @@
 {
   "name": "graph_fn",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Simple graph (theory) functions (with types)",
   "main": "dist/graph.js",
   "scripts": {
@@ -22,6 +22,10 @@
   "types": "./dist/graph.d.ts",
   "bugs": {
     "url": "https://github.com/patreeceeo/graph_fns.js/issues"
+  },
+  "devDependencies": {
+    "deno": "^1.30.0",
+    "esbuild": "^0.17.12"
   },
   "homepage": "https://github.com/patreeceeo/graph_fns.js#readme"
 }

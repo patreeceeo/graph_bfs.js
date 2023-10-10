@@ -36,4 +36,18 @@ I'm leaning towards the second since the edge weights object can be passed as an
 
 In a similar vein, when the graph in question is very large and performance matters, there can be functions that transform a `Graph` into an adjacency list or matrix, and functions that implement algorithms on those specific data structures.
 
+Also planning to make the [contributing](#Contributing) process less manual.
+
 Not planning on implementing undirected edges since those can be represented by two edges.
+
+## Contributing
+
+1. Make your changes in `src/`
+  - also in `types/` if changing any exported types)
+  - also in `src/*.test.ts` if new code is not isomorphic
+2. Run `deno test`
+2. Run `esbuild src/graph.ts --outdir=dist --minify --sourcemap`
+3. Re-add the type reference to `dist/graph.js': ```/// <reference types="../types/graph.d.ts" />```
+4. Commit and push to your clone
+
+Submit an issue or make a pull request on [Github](https://github.com/patreeceeo/graph_fns.js)
