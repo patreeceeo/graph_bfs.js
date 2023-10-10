@@ -28,4 +28,6 @@ type EdgeWeights = Map<string, Map<string, number>>
 
 I'm leaning towards the second since the edge weights object can be passed as an optional argument to functions where it's relevant. Seems simpler than having an argument that can be either a plain `Graph` or a `WeightedGraph`.
 
+In a similar vein, when the graph in question is very large and performance matters, there can be functions that transform a `Graph` into an adjacency list or matrix, and functions that implement algorithms on those specific data structures.
+
 Not planning on implementing undirected edges since those can be represented by two edges.
