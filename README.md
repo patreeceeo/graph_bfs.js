@@ -23,16 +23,8 @@ Add other common graph functions, like getting the _degree_ of a node, testing w
 Add support for graphs with weighted vertices by defining a new data type, probably something like:
 
 ```javascript
-type WeightedGraph = Map<string, Set<[string, number]>>
+type WeightedGraph = Map<string, Map<string, number>>
 ```
-
-Or have a separate object that stores the weight of all edges that aren't 1:
-
-```javascript
-type EdgeWeights = Map<string, Map<string, number>>
-```
-
-I'm leaning towards the second since the edge weights object can be passed as an optional argument to functions where it's relevant. Seems simpler than having an argument that can be either a plain `Graph` or a `WeightedGraph`.
 
 In a similar vein, when the graph in question is very large and performance matters, there can be functions that transform a `Graph` into an adjacency list or matrix, and functions that implement algorithms on those specific data structures.
 
