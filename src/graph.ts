@@ -1,8 +1,9 @@
+export type Graph = Map<string, Set<string>>;
 
 /**
 * Given a graph and a starting node, return a set of all nodes that can be reached from the starting node.
 */
-export function searchBreadth(graph: Map<string, string[]>, start: string): Set<string> {
+export function searchBreadth(graph: Graph, start: string): Set<string> {
   const stack = [];
   const visited = new Set<string>();
   const result = new Set<string>();

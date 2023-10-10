@@ -3,10 +3,10 @@ import { searchBreadth } from "./graph.ts";
 
 Deno.test("search", () => {
   const graph = new Map([
-    ["a", ["b", "c"]],
-    ["b", ["c"]],
-    ["c", ["d", "e"]],
-    ["e", ["f"]],
+    ["a", new Set(["b", "c"])],
+    ["b", new Set(["c"])],
+    ["c", new Set(["d", "e"])],
+    ["e", new Set(["f"])],
   ]);
   const adjacents = searchBreadth(graph, "a");
   assert.assertEquals(adjacents, new Set(["a", "b", "c", "d", "e", "f"]));
@@ -14,10 +14,10 @@ Deno.test("search", () => {
 
 Deno.test("search with cycles", () => {
   const graph = new Map([
-    ["a", ["b", "c"]],
-    ["b", ["a", "c"]],
-    ["c", ["a", "b", "d"]],
-    ["d", ["c"]],
+    ["a", new Set(["b", "c"])],
+    ["b", new Set(["a", "c"])],
+    ["c", new Set(["a", "b", "d"])],
+    ["d", new Set(["c"])],
   ]);
   const adjacents = searchBreadth(graph, "a");
   assert.assertEquals(adjacents, new Set(["a", "b", "c", "d"]));
